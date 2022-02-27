@@ -26,9 +26,8 @@ file_put_contents($save, $removehtmltags);
 sleep(1);
 
 echo '';
-$filename = readline('File location New Line : '); 
 
-$open = $filename;
+$open = $save;
 
 $text = file_get_contents($open);
 $text = str_replace(" ","\n",$text);
